@@ -1,0 +1,16 @@
+12/03/2025 11:01:07: Open executable: C:\Users\emmah\OneDrive\Escritorio\UNI\SEGON\2\DA\Salesman\GraphApplication\GraphApplicationProf.exe
+12/03/2025 11:01:07: Command line: GraphApplicationProf.exe display Display.gr Display.trk Display.vis
+12/03/2025 11:01:07: Nom Alumne 1: nombre del alumno 1
+12/03/2025 11:01:07: Cognoms Alumne : apellidos del alumno 1
+12/03/2025 11:01:07: NIU Alumne 1: 1000000
+12/03/2025 11:01:07: Nom Alumne 2: nombre del alumno 2
+12/03/2025 11:01:07: Cognoms Alumne 2: apellidos del alumno 2
+12/03/2025 11:01:07: NIU Alumne 2: 
+12/03/2025 11:01:07: Display Display.gr Display.gr Display.gr
+12/03/2025 11:01:10: OnBnClickedButtonDijkstra
+12/03/2025 11:01:10: Run time: 0.000003
+12/03/2025 11:01:12: OnBnClickedButtonDijkstraQueue
+12/03/2025 11:01:12: Run time: 0.000010
+12/03/2025 11:01:12: OnBnClickedButtonDijkstraQueue
+12/03/2025 11:01:12: Run time: 0.000008
+12/03/2025 11:01:28: Close executable: C:\Users\emmah\OneDrive\Escritorio\UNI\SEGON\2\DA\Salesman\GraphApplication\GraphApplicationProf.exe
