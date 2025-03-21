@@ -1,0 +1,10 @@
+Nom Alumne 1.....: nombre del alumno 1
+Cognoms Alumne 1.: apellidos del alumno 1
+NIU Alumne 1.....: 1000000
+NIUSAlumnes.csv readed
+
+NARGS 4
+Leer vertices
+Leer Aristas
+Fin lectura
+ONINIT OK

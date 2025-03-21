@@ -1,0 +1,26 @@
+RUN (4.000000): py "PythonSalesMan/main.py" DIJKSTRA TestDijkstra\VertexsDesconectats.GR Outputs\VertexsDesconectats_Dijkstra.DIS
+Nom Alumne 1.....: Cristina
+Cognoms Alumne 1.: Huanca González
+NIU Alumne 1.....: 1709896
+
+Nom Alumne 2.....: Héctor
+Cognoms Alumne 2.: Cervelló Navarro
+NIU Alumne 2.....: 1708336
+
+Algoritmo..: DIJKSTRA
+Grafo......: TestDijkstra\VertexsDesconectats.GR
+Distancias.: Outputs\VertexsDesconectats_Dijkstra.DIS
+Traceback (most recent call last):
+  File "C:\Users\emmah\OneDrive\Escritorio\UNI\SEGON\2\DA\Salesman\GraphApplication\PythonSalesMan\main.py", line 32, in <module>
+    if graph.CorrectionProcess(): sys.exit(0)
+       ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\emmah\OneDrive\Escritorio\UNI\SEGON\2\DA\Salesman\GraphApplication\PythonSalesMan\graph.py", line 258, in CorrectionProcess
+    dijkstra.Dijkstra(g,start)
+  File "C:\Users\emmah\OneDrive\Escritorio\UNI\SEGON\2\DA\Salesman\GraphApplication\PythonSalesMan\dijkstra.py", line 13, in Dijkstra
+    g.GetVertex(start).DijkstraDistance = 0
+    ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\emmah\OneDrive\Escritorio\UNI\SEGON\2\DA\Salesman\GraphApplication\PythonSalesMan\graph.py", line 49, in GetVertex
+    else: raise Exception('el vertex ', name,' no existeix')
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Exception: ('el vertex ', <graph.Vertex object at 0x000001C729B464B0>, ' no existeix')
+TOTAL TIME=0.174046

@@ -44,7 +44,7 @@ if graph.CorrectionProcess(): sys.exit(0)
 #t1 = time.time()                    					# Temps final
 #print("temps: ",t1-t0)              					# imprimir el temps d'execució
 #g.DisplayDistances()                					# Visualitza el graf i les distancies
-print()
+
 g=graph.Graph()                     					# crear un graf
 g.Load("TestSalesMan/RepeatVertex.GR")  				# llegir el graf
 g.SetDistancesToEdgeLength()        					# Posar les longituts de les arestes a la distancia entre vertexs

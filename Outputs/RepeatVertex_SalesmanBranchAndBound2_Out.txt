@@ -1,8 +1,0 @@
-RUN (4.000000): py "PythonSalesMan/main.py" BRANCHANDBOUND2 TestSalesman\RepeatVertex.GR TestSalesman\RepeatVertex.VIS Outputs\RepeatVertex_SalesmanBranchAndBound2.TRK
-Traceback (most recent call last):
-  File "C:\Users\emmah\OneDrive\Escritorio\UNI\SEGON\2\DA\Salesman\GraphApplication\PythonSalesMan\main.py", line 26, in <module>
-    graph.TestNIU(graph.NIUAlumne1)
-  File "C:\Users\emmah\OneDrive\Escritorio\UNI\SEGON\2\DA\Salesman\GraphApplication\PythonSalesMan\graph.py", line 232, in TestNIU
-    raise Exception('el NIU no correspon a un alumne', niu)
-Exception: ('el NIU no correspon a un alumne', '1709896')
-TOTAL TIME=0.175999

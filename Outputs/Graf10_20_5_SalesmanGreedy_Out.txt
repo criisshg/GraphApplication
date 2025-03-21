@@ -1,0 +1,30 @@
+RUN (4.000000): py "PythonSalesMan/main.py" GREEDY TestSalesman\Graf10_20_5.GR TestSalesman\Graf10_20_5.VIS Outputs\Graf10_20_5_SalesmanGreedy.TRK
+Nom Alumne 1.....: Cristina
+Cognoms Alumne 1.: Huanca González
+NIU Alumne 1.....: 1709896
+
+Nom Alumne 2.....: Héctor
+Cognoms Alumne 2.: Cervelló Navarro
+NIU Alumne 2.....: 1708336
+
+Algoritmo..: GREEDY
+Grafo......: TestSalesman\Graf10_20_5.GR
+Visitas....: TestSalesman\Graf10_20_5.VIS
+Track......: Outputs\Graf10_20_5_SalesmanGreedy.TRK
+Traceback (most recent call last):
+  File "C:\Users\emmah\OneDrive\Escritorio\UNI\SEGON\2\DA\Salesman\GraphApplication\PythonSalesMan\main.py", line 32, in <module>
+    if graph.CorrectionProcess(): sys.exit(0)
+       ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\emmah\OneDrive\Escritorio\UNI\SEGON\2\DA\Salesman\GraphApplication\PythonSalesMan\graph.py", line 288, in CorrectionProcess
+    trk = greedy.SalesmanTrackGreedy(g, vis)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\emmah\OneDrive\Escritorio\UNI\SEGON\2\DA\Salesman\GraphApplication\PythonSalesMan\greedy.py", line 27, in SalesmanTrackGreedy
+    dijkstra.Dijkstra(g, vertice)
+  File "C:\Users\emmah\OneDrive\Escritorio\UNI\SEGON\2\DA\Salesman\GraphApplication\PythonSalesMan\dijkstra.py", line 13, in Dijkstra
+    g.GetVertex(start).DijkstraDistance = 0
+    ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\emmah\OneDrive\Escritorio\UNI\SEGON\2\DA\Salesman\GraphApplication\PythonSalesMan\graph.py", line 49, in GetVertex
+    else: raise Exception('el vertex ', name,' no existeix')
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Exception: ('el vertex ', <graph.Vertex object at 0x000002015D6D6810>, ' no existeix')
+TOTAL TIME=0.154078

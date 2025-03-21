@@ -2,105 +2,79 @@ import graph
 import math
 import sys
 import queue
-import heapq
+
 
 # Dijkstra =====================================================================
+def Dijkstra(g,start):
+	# Inicializar las distancias a infinito
+	for vertice in g.Vertices:
+		vertice.DijkstraDistance = sys.float_info.max
+	start.DijkstraDistance = 0.0
 
-def Dijkstra(g, start):
-    # Inicializar las distancias a infinito, excepto para el vértice de inicio
-    for v in g.Vertices:
-        v.DijkstraDistance = math.inf
-    g.GetVertex(start).DijkstraDistance = 0
+	#Inicializamos el diccionario de vertices visitados con las distancias
+	DijkstraVisit = {vertice: math.inf for vertice in g.Vertices}
 
-    # Marcar todos los vértices como no visitados
-    DijkstraVisit = set(g.Vertices)
+	vActual = start
+	DijkstraVisit[vActual] = 0.0
 
-    while DijkstraVisit:
-        # Encontrar el vértice con la menor distancia que no ha sido visitado
-        vActual = min(DijkstraVisit, key=lambda v: v.DijkstraDistance)
+	#Recorremos el diccionario hasta que no queden nodos por visitar
+	if start is not None:
+		while DijkstraVisit:
+			for aresta in vActual.Edges:
+				distancia = aresta.Length + DijkstraVisit[vActual]
+				vecino = aresta.Destination
+				if (vecino in DijkstraVisit) and (distancia < DijkstraVisit[vecino]):
+					vecino.previousNode = vActual
+					vecino.previousEdge = aresta
+					DijkstraVisit[vecino] = distancia
 
-        # Visitar todos los vértices adyacentes
-        for v in vActual.Edges:
-            vecino = v.Destination
-            if vecino in DijkstraVisit:
-                # Calcular la posible distancia más corta
-                nueva_distancia = vActual.DijkstraDistance + v.Length
-                if nueva_distancia < vecino.DijkstraDistance:
-                    vecino.DijkstraDistance = nueva_distancia
+			#Actualizamos la distancia del vertice actual eliminandolo del diccionario que recorremos
+			vActual.DijkstraDistance = DijkstraVisit.pop(vActual)
 
-        # Marcar el vértice actual como visitado
-        DijkstraVisit.remove(vActual)
-    
+			#Buscamos el proximo vertice que sera el vecino con la menor distancia
+			next_vecino = None
+			dist_min = math.inf
+			for vecino, dist in DijkstraVisit.items():
+				if dist < dist_min:
+					dist_min = dist
+					next_vecino = vecino
+			vActual = next_vecino
+			if vActual == None:
+				break
+
+
 
 # DijkstraQueue ================================================================
 
-# Queue needed
 def DijkstraQueue(g, start):
-    # Inicializar las distancias a infinito, excepto para el vértice de inicio
-    for v in g.Vertices:
-        v.DijkstraDistance = math.inf
-    start_vertex = g.GetVertex(start)
-    start_vertex.DijkstraDistance = 0
+    # Inicializar las distancias a infinito
+    for vertice in g.Vertices:
+        vertice.DijkstraDistance = sys.float_info.max
 
-    # Priority queue
-    pq = queue.PriorityQueue()
-    pq.put((0, start_vertex))
+    # Inicializamos el diccionario de vertices visitados con las distancias
+    DijkstraVisit = {vertice: False for vertice in g.Vertices}
+    DijkstraVisit[start] = False
+    start.DijkstraDistance = 0.0
 
-    visited = set()
+    # Inicializamos la cola con el vertice inicial
+    cola = [start]
 
-    while not pq.empty():
-        current_distance, vActual = pq.get()
+    while cola:
+        vActual = cola.pop(0)
 
-        if vActual in visited:
-            continue
+        # Si el vertice no ha sido visitado
+        # Para cada vecino del vertice desencolado
+        for aresta in vActual.Edges:
+            vecino = aresta.Destination
+            distance = aresta.Length + vActual.DijkstraDistance
 
-        for v in vActual.Edges:
-            vecino = v.Destination
-            new_distance = current_distance + v.Length
+            # Si la distancia al vecino a través del vertice desencolado es menor que su distancia actual
+            if distance < vecino.DijkstraDistance:
+                # Actualizamos la distancia del vecino
+                vecino.DijkstraDistance = distance
 
-            if new_distance < vecino.DijkstraDistance:
-                vecino.DijkstraDistance = new_distance
-                pq.put((new_distance, vecino))
+                # Encolamos el vecino
+                cola.append(vecino)
 
-        visited.add(vActual)
-
-"""
-# Heapq needed
-
-def DijkstraQueue(g, start):
-    # Inicializar las distancias a infinito, excepto para el vértice de inicio
-    for v in g.Vertices:
-        v.DijkstraDistance = float('inf')
-    start_vertex = g.GetVertex(start)
-    start_vertex.DijkstraDistance = 0
-
-    # Marcar todos los vértices como no visitados
-    DijkstraVisit = {v: False for v in g.Vertices}
-
-    # Crear la cola de prioridad y agregar el vértice inicial
-    priority_queue = []
-    heapq.heappush(priority_queue, (0, start_vertex))
-
-    while priority_queue:
-        # Extraer el vértice con la distancia más corta no visitado
-        current_distance, vActual = heapq.heappop(priority_queue)
-
-        if DijkstraVisit[vActual]:
-            continue
-        
-        # Marcar el vértice como visitado
+        # Marcamos el vertice como visitado
         DijkstraVisit[vActual] = True
-
-        # Actualizar las distancias para cada vértice adyacente
-        for v in vActual.Edges:
-            vecino = v.Destination
-            distancia = current_distance + v.Length
-
-            if distancia < vecino.DijkstraDistance:
-                vecino.DijkstraDistance = distancia
-                heapq.heappush(priority_queue, (distancia, vecino))
-
-    # Opcional: devolver las distancias si es necesario
-    return {v.Name: v.DijkstraDistance for v in g.Vertices}
-"""
-
