@@ -11,20 +11,5 @@ Algoritmo..: GREEDY
 Grafo......: TestSalesman\graf30_300_8.GR
 Visitas....: TestSalesman\graf30_300_8.VIS
 Track......: Outputs\graf30_300_8_SalesmanGreedy.TRK
-Traceback (most recent call last):
-  File "C:\Users\emmah\OneDrive\Escritorio\UNI\SEGON\2\DA\Salesman\GraphApplication\PythonSalesMan\main.py", line 32, in <module>
-    if graph.CorrectionProcess(): sys.exit(0)
-       ^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\emmah\OneDrive\Escritorio\UNI\SEGON\2\DA\Salesman\GraphApplication\PythonSalesMan\graph.py", line 288, in CorrectionProcess
-    trk = greedy.SalesmanTrackGreedy(g, vis)
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\emmah\OneDrive\Escritorio\UNI\SEGON\2\DA\Salesman\GraphApplication\PythonSalesMan\greedy.py", line 27, in SalesmanTrackGreedy
-    dijkstra.Dijkstra(g, vertice)
-  File "C:\Users\emmah\OneDrive\Escritorio\UNI\SEGON\2\DA\Salesman\GraphApplication\PythonSalesMan\dijkstra.py", line 13, in Dijkstra
-    g.GetVertex(start).DijkstraDistance = 0
-    ^^^^^^^^^^^^^^^^^^
-  File "C:\Users\emmah\OneDrive\Escritorio\UNI\SEGON\2\DA\Salesman\GraphApplication\PythonSalesMan\graph.py", line 49, in GetVertex
-    else: raise Exception('el vertex ', name,' no existeix')
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Exception: ('el vertex ', <graph.Vertex object at 0x000001E83EB169F0>, ' no existeix')
-TOTAL TIME=0.186278
+TIEMPO DE EJECUCION: 0.0009696483612060547
+TOTAL TIME=0.238112

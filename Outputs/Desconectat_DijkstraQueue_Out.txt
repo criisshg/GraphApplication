@@ -10,17 +10,5 @@ NIU Alumne 2.....: 1708336
 Algoritmo..: DIJKSTRAQUEUE
 Grafo......: TestDijkstra\Desconectat.GR
 Distancias.: Outputs\Desconectat_DijkstraQueue.DIS
-Traceback (most recent call last):
-  File "C:\Users\emmah\OneDrive\Escritorio\UNI\SEGON\2\DA\Salesman\GraphApplication\PythonSalesMan\main.py", line 32, in <module>
-    if graph.CorrectionProcess(): sys.exit(0)
-       ^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\emmah\OneDrive\Escritorio\UNI\SEGON\2\DA\Salesman\GraphApplication\PythonSalesMan\graph.py", line 272, in CorrectionProcess
-    dijkstra.DijkstraQueue(g,start)
-  File "C:\Users\emmah\OneDrive\Escritorio\UNI\SEGON\2\DA\Salesman\GraphApplication\PythonSalesMan\dijkstra.py", line 42, in DijkstraQueue
-    start_vertex = g.GetVertex(start)
-                   ^^^^^^^^^^^^^^^^^^
-  File "C:\Users\emmah\OneDrive\Escritorio\UNI\SEGON\2\DA\Salesman\GraphApplication\PythonSalesMan\graph.py", line 49, in GetVertex
-    else: raise Exception('el vertex ', name,' no existeix')
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Exception: ('el vertex ', <graph.Vertex object at 0x0000024BEE7A66F0>, ' no existeix')
-TOTAL TIME=0.187521
+TIEMPO DE EJECUCION: 0.0
+TOTAL TIME=0.221126
