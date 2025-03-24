@@ -1,0 +1,14 @@
+RUN (4.000000): py "PythonSalesMan/main.py" DIJKSTRAQUEUE TestDijkstra\GrafMoltConnectat100.GR Outputs\GrafMoltConnectat100_DijkstraQueue.DIS
+Nom Alumne 1.....: Cristina
+Cognoms Alumne 1.: Huanca González
+NIU Alumne 1.....: 1709896
+
+Nom Alumne 2.....: Héctor
+Cognoms Alumne 2.: Cervelló Navarro
+NIU Alumne 2.....: 1708336
+
+Algoritmo..: DIJKSTRAQUEUE
+Grafo......: TestDijkstra\GrafMoltConnectat100.GR
+Distancias.: Outputs\GrafMoltConnectat100_DijkstraQueue.DIS
+TIEMPO DE EJECUCION: 0.0
+TOTAL TIME=0.229936

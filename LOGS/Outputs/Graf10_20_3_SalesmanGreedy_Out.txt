@@ -1,0 +1,15 @@
+RUN (4.000000): py "PythonSalesMan/main.py" GREEDY TestSalesman\Graf10_20_3.GR TestSalesman\Graf10_20_3.VIS Outputs\Graf10_20_3_SalesmanGreedy.TRK
+Nom Alumne 1.....: Cristina
+Cognoms Alumne 1.: Huanca González
+NIU Alumne 1.....: 1709896
+
+Nom Alumne 2.....: Héctor
+Cognoms Alumne 2.: Cervelló Navarro
+NIU Alumne 2.....: 1708336
+
+Algoritmo..: GREEDY
+Grafo......: TestSalesman\Graf10_20_3.GR
+Visitas....: TestSalesman\Graf10_20_3.VIS
+Track......: Outputs\Graf10_20_3_SalesmanGreedy.TRK
+TIEMPO DE EJECUCION: 0.0
+TOTAL TIME=0.214371
