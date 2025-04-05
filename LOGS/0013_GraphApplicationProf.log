@@ -1,0 +1,20 @@
+31/03/2025 11:10:28: Open executable: C:\Users\emmah\OneDrive\Escritorio\UNI\SEGON\2\DA\Salesman\GraphApplication\GraphApplicationProf.exe
+31/03/2025 11:10:28: Command line: GraphApplicationProf.exe display Display.gr Display.trk Display.vis
+31/03/2025 11:10:28: Nom Alumne 1: nombre del alumno 1
+31/03/2025 11:10:28: Cognoms Alumne : apellidos del alumno 1
+31/03/2025 11:10:28: NIU Alumne 1: 1000000
+31/03/2025 11:10:28: Nom Alumne 2: nombre del alumno 2
+31/03/2025 11:10:28: Cognoms Alumne 2: apellidos del alumno 2
+31/03/2025 11:10:28: NIU Alumne 2: 
+31/03/2025 11:10:28: Display Display.gr Display.gr Display.gr
+31/03/2025 11:10:38: OnBnClickedButtonDijkstraQueue
+31/03/2025 11:10:38: Run time: 0.000012
+31/03/2025 11:10:39: OnBnClickedButtonTrobaCamiBB1
+31/03/2025 11:10:39: ERROR: CGraph::GetVertex: no se ha encontrado un vértice del grafo con nombre: INICI
+31/03/2025 11:10:41: OnBnClickedButtonBacktrackingGreedy
+31/03/2025 11:10:41: Run time: 0.000175
+31/03/2025 11:10:42: OnBnClickedButtonBacktracking
+31/03/2025 11:10:42: Run time: 0.000387
+31/03/2025 11:10:42: OnBnClickedButtonBacktracking
+31/03/2025 11:10:42: Run time: 0.000312
+31/03/2025 11:11:09: Close executable: C:\Users\emmah\OneDrive\Escritorio\UNI\SEGON\2\DA\Salesman\GraphApplication\GraphApplicationProf.exe

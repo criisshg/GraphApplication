@@ -8,3 +8,11 @@ Leer vertices
 Leer Aristas
 Fin lectura
 ONINIT OK
+DIJKSTRA
+Run time: 3.63999e-05seg.
+DIJKSTRA QUEUE
+Run time: 5.00004e-06seg.
+TrobaCami 1
+EXCEPTION RUNNING ALGORITHM: CGraph::GetVertex: no se ha encontrado un vértice del grafo con nombre: INICI
+TrobaCami 2
+EXCEPTION RUNNING ALGORITHM: CGraph::GetVertex: no se ha encontrado un vértice del grafo con nombre: INICI

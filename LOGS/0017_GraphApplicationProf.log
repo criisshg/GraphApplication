@@ -1,0 +1,42 @@
+05/04/2025 23:34:22: Open executable: C:\Users\emmah\OneDrive\Escritorio\UNI\SEGON\2\DA\Salesman\GraphApplication\GraphApplicationProf.exe
+05/04/2025 23:34:22: Command line: GraphApplicationProf.exe display Display.gr Display.trk Display.vis
+05/04/2025 23:34:22: Nom Alumne 1: nombre del alumno 1
+05/04/2025 23:34:22: Cognoms Alumne : apellidos del alumno 1
+05/04/2025 23:34:22: NIU Alumne 1: 1000000
+05/04/2025 23:34:22: Nom Alumne 2: nombre del alumno 2
+05/04/2025 23:34:22: Cognoms Alumne 2: apellidos del alumno 2
+05/04/2025 23:34:22: NIU Alumne 2: 
+05/04/2025 23:34:22: Display Display.gr Display.gr Display.gr
+05/04/2025 23:34:26: OnBnClickedButtonDijkstra
+05/04/2025 23:34:26: Run time: 0.000003
+05/04/2025 23:34:28: OnBnClickedButtonDijkstraQueue
+05/04/2025 23:34:28: Run time: 0.000005
+05/04/2025 23:34:30: OnBnClickedButtonDijkstra
+05/04/2025 23:34:30: Run time: 0.000003
+05/04/2025 23:34:31: OnBnClickedButtonDijkstraQueue
+05/04/2025 23:34:31: Run time: 0.000006
+05/04/2025 23:34:31: OnBnClickedButtonDijkstra
+05/04/2025 23:34:31: Run time: 0.000006
+05/04/2025 23:34:33: OnBnClickedButtonDijkstraQueue
+05/04/2025 23:34:33: Run time: 0.000005
+05/04/2025 23:34:34: OnBnClickedButtonDijkstra
+05/04/2025 23:34:34: Run time: 0.000003
+05/04/2025 23:34:35: OnBnClickedButtonDijkstraQueue
+05/04/2025 23:34:35: Run time: 0.000005
+05/04/2025 23:34:35: OnBnClickedButtonDijkstra
+05/04/2025 23:34:35: Run time: 0.000004
+05/04/2025 23:34:36: OnBnClickedButtonDijkstraQueue
+05/04/2025 23:34:36: Run time: 0.000008
+05/04/2025 23:34:39: OnBnClickedButtonGreedy
+05/04/2025 23:34:39: Run time: 0.000022
+05/04/2025 23:34:40: OnBnClickedButtonGreedy
+05/04/2025 23:34:40: Run time: 0.000020
+05/04/2025 23:34:41: OnBnClickedButtonBranchBound1
+05/04/2025 23:34:41: Run time: 0.000216
+05/04/2025 23:34:42: OnBnClickedButtonGreedy
+05/04/2025 23:34:42: Run time: 0.000054
+05/04/2025 23:34:43: OnBnClickedButtonBranchBound2
+05/04/2025 23:34:43: Run time: 0.000178
+05/04/2025 23:34:44: OnBnClickedButtonGreedy
+05/04/2025 23:34:44: Run time: 0.000033
+05/04/2025 23:34:52: Close executable: C:\Users\emmah\OneDrive\Escritorio\UNI\SEGON\2\DA\Salesman\GraphApplication\GraphApplicationProf.exe

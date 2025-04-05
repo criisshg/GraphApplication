@@ -19,6 +19,8 @@ class Vertex:
         self.y = y
         self.Edges = []
         self.DijkstraDistance = 0.0
+        self.previousNode = None  # Añadimos este atributo
+        self.previousEdge = None  # Añadimos este atributo
 
 # EDGE =========================================================================
 

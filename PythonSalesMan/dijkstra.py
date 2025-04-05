@@ -1,7 +1,7 @@
 import graph
 import math
 import sys
-import queue
+import heapq
 
 
 # Dijkstra =====================================================================
@@ -47,34 +47,32 @@ def Dijkstra(g,start):
 # DijkstraQueue ================================================================
 
 def DijkstraQueue(g, start):
-    # Inicializar las distancias a infinito
+    # Inicializar distancias
     for vertice in g.Vertices:
         vertice.DijkstraDistance = sys.float_info.max
-
-    # Inicializamos el diccionario de vertices visitados con las distancias
-    DijkstraVisit = {vertice: False for vertice in g.Vertices}
-    DijkstraVisit[start] = False
+        vertice.previousNode = None
+        vertice.previousEdge = None
+    
     start.DijkstraDistance = 0.0
-
-    # Inicializamos la cola con el vertice inicial
-    cola = [start]
-
-    while cola:
-        vActual = cola.pop(0)
-
-        # Si el vertice no ha sido visitado
-        # Para cada vecino del vertice desencolado
+    
+    # Usar una cola de prioridad (heap)
+    heap = []
+    heapq.heappush(heap, (0.0, start))
+    
+    while heap:
+        current_dist, vActual = heapq.heappop(heap)
+        
+        # Si ya encontramos un camino mejor, ignorar este
+        if current_dist > vActual.DijkstraDistance:
+            continue
+        
         for aresta in vActual.Edges:
             vecino = aresta.Destination
-            distance = aresta.Length + vActual.DijkstraDistance
-
-            # Si la distancia al vecino a través del vertice desencolado es menor que su distancia actual
+            distance = current_dist + aresta.Length
+            
+            # Relajación
             if distance < vecino.DijkstraDistance:
-                # Actualizamos la distancia del vecino
                 vecino.DijkstraDistance = distance
-
-                # Encolamos el vecino
-                cola.append(vecino)
-
-        # Marcamos el vertice como visitado
-        DijkstraVisit[vActual] = True
+                vecino.previousNode = vActual
+                vecino.previousEdge = aresta
+                heapq.heappush(heap, (distance, vecino))
