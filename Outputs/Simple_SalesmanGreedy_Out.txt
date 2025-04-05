@@ -12,4 +12,4 @@ Grafo......: TestSalesman\Simple.GR
 Visitas....: TestSalesman\Simple.VIS
 Track......: Outputs\Simple_SalesmanGreedy.TRK
 TIEMPO DE EJECUCION: 0.0
-TOTAL TIME=0.202717
+TOTAL TIME=0.213485

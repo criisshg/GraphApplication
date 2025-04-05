@@ -18,13 +18,13 @@ def Dijkstra(g,start):
 	DijkstraVisit[vActual] = 0.0
 
 	#Recorremos el diccionario hasta que no queden nodos por visitar
-	if start is not None:
-		while DijkstraVisit:
+	if start is not None:  # Si el nodo inicial no es None, comenzamos el recorrido
+		while DijkstraVisit:  
 			for aresta in vActual.Edges:
-				distancia = aresta.Length + DijkstraVisit[vActual]
-				vecino = aresta.Destination
+				distancia = aresta.Length + DijkstraVisit[vActual]  
+				vecino = aresta.Destination  
 				if (vecino in DijkstraVisit) and (distancia < DijkstraVisit[vecino]):
-					vecino.previousNode = vActual
+					vecino.previousNode = vActual  
 					vecino.previousEdge = aresta
 					DijkstraVisit[vecino] = distancia
 
@@ -39,7 +39,7 @@ def Dijkstra(g,start):
 					dist_min = dist
 					next_vecino = vecino
 			vActual = next_vecino
-			if vActual == None:
+			if vActual == None:  # Si no hay más vecinos, salimos del bucle
 				break
 
 
@@ -50,8 +50,6 @@ def DijkstraQueue(g, start):
     # Inicializar distancias
     for vertice in g.Vertices:
         vertice.DijkstraDistance = sys.float_info.max
-        vertice.previousNode = None
-        vertice.previousEdge = None
     
     start.DijkstraDistance = 0.0
     
@@ -59,18 +57,18 @@ def DijkstraQueue(g, start):
     heap = []
     heapq.heappush(heap, (0.0, start))
     
-    while heap:
+    while heap:  # Mientras haya nodos por procesar
         current_dist, vActual = heapq.heappop(heap)
         
         # Si ya encontramos un camino mejor, ignorar este
         if current_dist > vActual.DijkstraDistance:
             continue
-        
+        # Si la distancia actual es mayor que la mejor conocida, ignorar
         for aresta in vActual.Edges:
             vecino = aresta.Destination
             distance = current_dist + aresta.Length
             
-            # Relajación
+            # Actualizamos la distancia si encontramos un camino mejor
             if distance < vecino.DijkstraDistance:
                 vecino.DijkstraDistance = distance
                 vecino.previousNode = vActual

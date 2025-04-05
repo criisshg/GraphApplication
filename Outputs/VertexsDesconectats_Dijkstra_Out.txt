@@ -11,4 +11,4 @@ Algoritmo..: DIJKSTRA
 Grafo......: TestDijkstra\VertexsDesconectats.GR
 Distancias.: Outputs\VertexsDesconectats_Dijkstra.DIS
 TIEMPO DE EJECUCION: 0.0
-TOTAL TIME=0.236445
+TOTAL TIME=0.195249

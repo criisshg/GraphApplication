@@ -11,4 +11,4 @@ Algoritmo..: DIJKSTRAQUEUE
 Grafo......: TestDijkstra\Graf10.GR
 Distancias.: Outputs\Graf10_DijkstraQueue.DIS
 TIEMPO DE EJECUCION: 0.0
-TOTAL TIME=0.209418
+TOTAL TIME=0.197825

@@ -11,4 +11,4 @@ Algoritmo..: DIJKSTRA
 Grafo......: TestDijkstra\Graf4.GR
 Distancias.: Outputs\Graf4_Dijkstra.DIS
 TIEMPO DE EJECUCION: 0.0
-TOTAL TIME=0.216785
+TOTAL TIME=0.189445

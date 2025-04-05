@@ -11,5 +11,5 @@ Algoritmo..: GREEDY
 Grafo......: TestSalesman\Graf50_200_7C.GR
 Visitas....: TestSalesman\Graf50_200_7C.VIS
 Track......: Outputs\Graf50_200_7C_SalesmanGreedy.TRK
-TIEMPO DE EJECUCION: 0.0010116100311279297
-TOTAL TIME=0.284252
+TIEMPO DE EJECUCION: 0.0
+TOTAL TIME=0.229153

@@ -3,7 +3,7 @@ import dijkstra
 import graph
 import math
 import sys
-import heapq  # Para una cola de prioridad eficiente
+import heapq
 
 # SalesmanTrackGreedy ==========================================================
 def get_arestas(v1, v):
@@ -11,18 +11,17 @@ def get_arestas(v1, v):
     arestas = []
     current = v1
     while current != v:
-        if not hasattr(current, 'previousEdge') or not current.previousEdge:
-            raise Exception("Camino no encontrado entre vértices")
+        # Añadir la arista al camino
         arestas.append(current.previousEdge)
         current = current.previousNode
     arestas.reverse()
     return arestas
 
 def SalesmanTrackGreedy(g, visits):
-    if len(visits.Vertices) < 2:
-        return graph.Track(g)  # Caso trivial
+    if len(visits.Vertices) < 2:  # Si no hay suficientes vértices, no hay camino para recorrer
+        return graph.Track(g)
     
-    # Inicialización
+    # inicializar el camino y los vértices
     objetivo = visits.Vertices[-1]
     vertice_actual = visits.Vertices[0]
     candidatos = visits.Vertices[1:-1]
@@ -51,5 +50,4 @@ def SalesmanTrackGreedy(g, visits):
     arestas_finales = get_arestas(objetivo, vertice_actual)
     for edge in arestas_finales:
         camino.AddLast(edge)
-    
     return camino
