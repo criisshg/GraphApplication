@@ -1,0 +1,15 @@
+RUN (4.000000): py "PythonSalesMan/main.py" BACKTRACKINGGREEDY TestSalesman\RepeatVertex.GR TestSalesman\RepeatVertex.VIS Outputs\RepeatVertex_SalesmanBacktrackingGreedy.TRK
+Nom Alumne 1.....: Cristina
+Cognoms Alumne 1.: Huanca González
+NIU Alumne 1.....: 1709896
+
+Nom Alumne 2.....: Héctor
+Cognoms Alumne 2.: Cervelló Navarro
+NIU Alumne 2.....: 1708336
+
+Algoritmo..: BACKTRACKINGGREEDY
+Grafo......: TestSalesman\RepeatVertex.GR
+Visitas....: TestSalesman\RepeatVertex.VIS
+Track......: Outputs\RepeatVertex_SalesmanBacktrackingGreedy.TRK
+TIEMPO DE EJECUCION: 0.0
+TOTAL TIME=0.212072

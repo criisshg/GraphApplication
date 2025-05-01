@@ -57,6 +57,87 @@ def SalesmanTrackBacktracking(g, visits):
 
 # ==============================================================================
 
+def reconstruir_camino(origen, destino):
+    camino = []
+    actual = destino
+    while actual != origen:
+        if actual.previousEdge is None:
+            return []  # No existe camino
+        camino.append(actual.previousEdge)
+        actual = actual.previousNode
+    camino.reverse()
+    return camino
+
 def SalesmanTrackBacktrackingGreedy(g, visits):
-    return graph.Track(g)
+    num_visitas = len(visits.Vertices)
+
+    # Caso simple (solo origen y destino)
+    if num_visitas == 2:
+        dijkstra.DijkstraQueue(g, visits.Vertices[0])
+        camino_simple = reconstruir_camino(visits.Vertices[0], visits.Vertices[1])
+        track_resultado = graph.Track(g)
+        for arista in camino_simple:
+            track_resultado.AddLast(arista)
+        return track_resultado
+
+    mejor_distancia = math.inf
+    mejor_camino = []
+
+    distancias = [[math.inf]*num_visitas for _ in range(num_visitas)]
+    caminos = [[[] for _ in range(num_visitas)] for _ in range(num_visitas)]
+
+    # Precalcular caminos óptimos con Dijkstra y verificar existencia
+    for i, origen in enumerate(visits.Vertices):
+        dijkstra.DijkstraQueue(g, origen)
+        for j, destino in enumerate(visits.Vertices):
+            if i != j:
+                camino = reconstruir_camino(origen, destino)
+                if camino:
+                    distancias[i][j] = destino.DijkstraDistance
+                    caminos[i][j] = camino
+                else:
+                    distancias[i][j] = math.inf
+
+    visitado = [False]*num_visitas
+    visitado[0] = True
+
+    camino_actual = []
+    distancia_actual = 0
+
+    def backtrack(visita_actual, nivel):
+        nonlocal mejor_distancia, mejor_camino, distancia_actual
+
+        if nivel == num_visitas - 1:
+            if distancias[visita_actual][num_visitas - 1] == math.inf:
+                return  # no existe camino final
+            distancia_total = distancia_actual + distancias[visita_actual][num_visitas - 1]
+            if distancia_total < mejor_distancia:
+                mejor_distancia = distancia_total
+                mejor_camino = camino_actual + caminos[visita_actual][num_visitas - 1]
+            return
+
+        for siguiente_visita in range(1, num_visitas - 1):
+            if not visitado[siguiente_visita] and distancias[visita_actual][siguiente_visita] != math.inf:
+                nueva_distancia = distancia_actual + distancias[visita_actual][siguiente_visita]
+                if nueva_distancia >= mejor_distancia:
+                    continue
+
+                visitado[siguiente_visita] = True
+                camino_actual.extend(caminos[visita_actual][siguiente_visita])
+                distancia_actual = nueva_distancia
+
+                backtrack(siguiente_visita, nivel + 1)
+
+                for _ in caminos[visita_actual][siguiente_visita]:
+                    camino_actual.pop()
+                distancia_actual -= distancias[visita_actual][siguiente_visita]
+                visitado[siguiente_visita] = False
+
+    backtrack(0, 1)
+
+    track_resultado = graph.Track(g)
+    for arista in mejor_camino:
+        track_resultado.AddLast(arista)
+
+    return track_resultado
 
