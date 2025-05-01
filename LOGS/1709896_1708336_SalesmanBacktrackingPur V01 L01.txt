@@ -1,0 +1,85 @@
+INFORME DE CORRECCION SalesmanBacktrackingPur
+================================================================================
+
+Fecha: 01/05/2025
+Hora: 11:35:33
+Ejecutable: PythonSalesMan/main.py
+
+ALUMNO: 1709896 Huanca González, Cristina test@autonoma.cat
+
+ALUMNO: 1708336 Cervelló Navarro, Héctor test@autonoma.cat
+
+================================================================================
+PRUEBA CORRECTA: Simple::SalesmanBacktracking TIEMPO: 0.00000000s. (0.00000010s.)
+--------------------------------------------------------------------------------
+TRACK OK      : [V0001 -(E0005)->V0002]
+TRACK PRACTICA: [V0001 -(E0005)->V0002]
+
+
+================================================================================
+PRUEBA FALLA POR TIEMPO: GreedyNoOptimo::SalesmanBacktracking TIEMPO: 0.09007220s. (0.00900722s.)
+--------------------------------------------------------------------------------
+LeerTiempo: No se ha podido leer el tiempo del fichero: Outputs\GreedyNoOptimo_SalesmanBacktracking_Out.txt
+================================================================================
+PRUEBA FALLA POR TIEMPO: RepeatVertex::SalesmanBacktracking TIEMPO: 0.36030300s. (0.03603030s.)
+--------------------------------------------------------------------------------
+LeerTiempo: No se ha podido leer el tiempo del fichero: Outputs\RepeatVertex_SalesmanBacktracking_Out.txt
+================================================================================
+PRUEBA FALLA POR TIEMPO: AfterEnd::SalesmanBacktracking TIEMPO: 0.02002240s. (0.00200224s.)
+--------------------------------------------------------------------------------
+LeerTiempo: No se ha podido leer el tiempo del fichero: Outputs\AfterEnd_SalesmanBacktracking_Out.txt
+================================================================================
+PRUEBA CORRECTA: Graf10_20_3::SalesmanBacktracking TIEMPO: 0.00000000s. (0.00150108s.)
+--------------------------------------------------------------------------------
+TRACK OK      : [V0008 -(E0025$Reverse)->V0007 -(E0011$Reverse)->V0004 -(E0005$Reverse)->V0003 -(E0033)->V0006]
+TRACK PRACTICA: [V0008 -(E0025$Reverse)->V0007 -(E0011$Reverse)->V0004 -(E0005$Reverse)->V0003 -(E0033)->V0006]
+
+
+================================================================================
+PRUEBA FALLA: Graf10_20_5::SalesmanBacktracking TIEMPO: 0.00000000s. (0.34880000s.)
+--------------------------------------------------------------------------------
+TRACK OK      : [V0007 -(E0029$Reverse)->V0003 -(E0021$Reverse)->V0005 -(E0021)->V0003 -(E0031)->V0006 -(E0013)->V0008 -(E0019)->V0002]
+TRACK PRACTICA: [V0007 -(E0029$Reverse)->V0003 -(E0021$Reverse)->V0005 -(E0007$Reverse)->V0001 -(E0025$Reverse)->V0006 -(E0013)->V0008 -(E0019)->V0002]
+
+Track demasiado largo (59549.7,63695.7)
+
+================================================================================
+PRUEBA CORRECTA: Graf10_20_6::SalesmanBacktracking TIEMPO: 0.00000000s. (0.03002570s.)
+--------------------------------------------------------------------------------
+TRACK OK      : [V0002 -(E0001$Reverse)->V0001 -(E0013)->V0008 -(E0017)->V0010 -(E0035)->V0005 -(E0019)->V0003 -(E0023$Reverse)->V0004 -(E0011)->V0007]
+TRACK PRACTICA: [V0002 -(E0001$Reverse)->V0001 -(E0013)->V0008 -(E0017)->V0010 -(E0035)->V0005 -(E0019)->V0003 -(E0023$Reverse)->V0004 -(E0011)->V0007]
+
+
+================================================================================
+PRUEBA CORRECTA: Graf10_40_4::SalesmanBacktracking TIEMPO: 0.00098991s. (0.01201030s.)
+--------------------------------------------------------------------------------
+TRACK OK      : [V0003 -(E0003$Reverse)->V0002 -(E0033$Reverse)->V0008 -(E0013$Reverse)->V0007 -(E0011$Reverse)->V0006 -(E0039$Reverse)->V0001]
+TRACK PRACTICA: [V0003 -(E0003$Reverse)->V0002 -(E0033$Reverse)->V0008 -(E0013$Reverse)->V0007 -(E0011$Reverse)->V0006 -(E0039$Reverse)->V0001]
+
+
+================================================================================
+PRUEBA CORRECTA: graf20_100_4::SalesmanBacktracking TIEMPO: 0.12554550s. (10.18980000s.)
+--------------------------------------------------------------------------------
+TRACK OK      : [V0018 -(E0103$Reverse)->V0007 -(E0015)->V0009 -(E0173$Reverse)->V0017 -(E0087)->V0002 -(E0009)->V0006]
+TRACK PRACTICA: [V0018 -(E0103$Reverse)->V0007 -(E0015)->V0009 -(E0173$Reverse)->V0017 -(E0087)->V0002 -(E0009)->V0006]
+
+
+================================================================================
+PRUEBA FALLA: Graf50_200_6::SalesmanBacktracking TIEMPO: 0.41413236s. (11.37780000s.)
+--------------------------------------------------------------------------------
+TRACK OK      : [V0010 -(E0161)->V0007 -(E0011$Reverse)->V0003 -(E0007)->V0005 -(E0143$Reverse)->V0007 -(E0135$Reverse)->V0019 -(E0045)->V0014 -(E0113$Reverse)->V0012]
+TRACK PRACTICA: [V0010 -(E0141$Reverse)->V0019 -(E0135)->V0007 -(E0143)->V0005 -(E0007$Reverse)->V0003 -(E0025)->V0014 -(E0113$Reverse)->V0012]
+
+Track demasiado largo (37596.4,39799.6)
+
+================================================================================
+PRUEBA FALLA POR TIEMPO: Graf50_200_7C::SalesmanBacktracking TIEMPO: 38.94350000s. (3.89435000s.)
+--------------------------------------------------------------------------------
+LeerTiempo: No se ha podido leer el tiempo del fichero: Outputs\Graf50_200_7C_SalesmanBacktracking_Out.txt
+================================================================================
+RESUMEN ========================================================================
+================================================================================
+PRUEBAS OK (5): Simple::SalesmanBacktracking, Graf10_20_3::SalesmanBacktracking, Graf10_20_6::SalesmanBacktracking, Graf10_40_4::SalesmanBacktracking, graf20_100_4::SalesmanBacktracking
+PRUEBAS NOK(6): GreedyNoOptimo::SalesmanBacktracking, RepeatVertex::SalesmanBacktracking, AfterEnd::SalesmanBacktracking, Graf10_20_5::SalesmanBacktracking, Graf50_200_6::SalesmanBacktracking, Graf50_200_7C::SalesmanBacktracking
+TIEMPO: 62.79849446.s (25.90132694s.)
+NOTA: 4.51325424

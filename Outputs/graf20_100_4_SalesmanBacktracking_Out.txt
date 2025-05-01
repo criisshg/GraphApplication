@@ -1,0 +1,15 @@
+RUN (40.949200): py "PythonSalesMan/main.py" BACKTRACKING TestSalesman\graf20_100_4.GR TestSalesman\graf20_100_4.VIS Outputs\graf20_100_4_SalesmanBacktracking.TRK
+Nom Alumne 1.....: Cristina
+Cognoms Alumne 1.: Huanca González
+NIU Alumne 1.....: 1709896
+
+Nom Alumne 2.....: Héctor
+Cognoms Alumne 2.: Cervelló Navarro
+NIU Alumne 2.....: 1708336
+
+Algoritmo..: BACKTRACKING
+Grafo......: TestSalesman\graf20_100_4.GR
+Visitas....: TestSalesman\graf20_100_4.VIS
+Track......: Outputs\graf20_100_4_SalesmanBacktracking.TRK
+TIEMPO DE EJECUCION: 0.45105552673339844
+TOTAL TIME=0.715845
