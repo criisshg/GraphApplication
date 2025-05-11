@@ -12,4 +12,4 @@ Grafo......: TestSalesman\RepeatVertex.GR
 Visitas....: TestSalesman\RepeatVertex.VIS
 Track......: Outputs\RepeatVertex_SalesmanBacktrackingGreedy.TRK
 TIEMPO DE EJECUCION: 0.0
-TOTAL TIME=0.212072
+TOTAL TIME=0.153686

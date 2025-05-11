@@ -12,4 +12,4 @@ Grafo......: TestSalesman\GreedyNoOptimo.GR
 Visitas....: TestSalesman\GreedyNoOptimo.VIS
 Track......: Outputs\GreedyNoOptimo_SalesmanBacktrackingGreedy.TRK
 TIEMPO DE EJECUCION: 0.0
-TOTAL TIME=0.251673
+TOTAL TIME=0.170749

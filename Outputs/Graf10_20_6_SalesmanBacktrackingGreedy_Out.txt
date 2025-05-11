@@ -12,4 +12,4 @@ Grafo......: TestSalesman\Graf10_20_6.GR
 Visitas....: TestSalesman\Graf10_20_6.VIS
 Track......: Outputs\Graf10_20_6_SalesmanBacktrackingGreedy.TRK
 TIEMPO DE EJECUCION: 0.0
-TOTAL TIME=0.269559
+TOTAL TIME=0.186093

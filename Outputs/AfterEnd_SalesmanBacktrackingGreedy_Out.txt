@@ -12,4 +12,4 @@ Grafo......: TestSalesman\AfterEnd.GR
 Visitas....: TestSalesman\AfterEnd.VIS
 Track......: Outputs\AfterEnd_SalesmanBacktrackingGreedy.TRK
 TIEMPO DE EJECUCION: 0.0
-TOTAL TIME=0.192612
+TOTAL TIME=0.169234
